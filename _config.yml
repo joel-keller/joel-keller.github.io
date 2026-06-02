@@ -23,7 +23,7 @@ repository               : "joel-keller/joel-keller.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/unedited.png"
+  avatar           : "unedited.png"
   name             : "Joel Keller"
   pronouns         : # example: "she/her"  
   bio              : "PhD Student"
