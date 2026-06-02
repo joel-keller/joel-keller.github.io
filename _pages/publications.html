@@ -4,33 +4,23 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<section class="publications">
+  
+  <ul>
 
 
-
+    <li>
+      <a href="https://openreview.net/forum?id=5jGcYMUZx1">
+        Test-Time Guidance for Flow-Based Generative Models via Parallel Tempering on Source Distributions
+      </a>, ICML 2026.
+      <br><em><strong>Joel A. Keller</strong>*, Shih-Hsin Wang*, Taos Transue, Drake Brown, Thomas Stohmer, Bao Wang.</em>
+    </li>
+    <li>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/39251289/">
+        “Development of an Algorithm for Analysis of Routes: Case Studies Using Novice and Older Drivers.”
+      </a>  Journal of Safety Research</em>, 2024.
+      <br><em> Siyao Zhu, Theresa J. Chirles, <strong>Joel A. Keller</strong>, et al. </em>
+  
+    </li>
+  <p><small>(* denotes equal conribution.)</small></p>
+</section>

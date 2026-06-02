@@ -363,3 +363,26 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
       display: none;
     }
   }
+
+/* --- FINAL CLEANUP TO REMOVE FOOTER SPACE --- */
+
+html {
+  position: static !important; /* Disables the relative positioning */
+  min-height: 0 !important;    /* Disables the 100% height requirement */
+}
+
+body {
+  padding-bottom: 0 !important; /* Kills the 9em ghost space */
+  min-height: 0 !important;
+}
+
+/* Hide the actual footer elements */
+.site-footer, 
+footer, 
+#footer, 
+.page__footer {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
